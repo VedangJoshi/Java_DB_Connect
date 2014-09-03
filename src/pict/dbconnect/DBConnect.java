@@ -36,11 +36,7 @@ public class DBConnect {
         DBCollection collection = database.getCollection("patients");                
         DBObject doc = collection.findOne();
         
-        BasicDBObject doc1 = new BasicDBObject();
-        doc1.put("details.name","ibfnblifdhbl");
-        
-        
-        
+       
         /**
          * Find the number of Documents in the collection 
          */
@@ -48,6 +44,6 @@ public class DBConnect {
 
         System.out.println(doc);
         System.out.println(Num_of_docs);
-//        System.out.println(doc1);
+        System.out.println(doc1);
     }
 }
